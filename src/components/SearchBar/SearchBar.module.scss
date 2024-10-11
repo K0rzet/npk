@@ -1,0 +1,75 @@
+/* src/components/SearchBar/SearchBar.module.scss */
+
+.searchContainer {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    color: black;
+    padding: 0 10px;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .resultsDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .resultsSection {
+    padding: 10px;
+  }
+  
+  .resultsSection h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .resultItem {
+    padding: 8px 0;
+  }
+  
+  .resultItem a {
+    text-decoration: none;
+    color: #333 !important;
+  }
+  
+  .resultsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .resultLink {
+    color: black;
+  }
+  
+  .resultItem a:hover {
+    text-decoration: underline;
+  }
+  
+  .loader {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .placeholderMessage {
+    padding: 10px;
+    text-align: center;
+    color: #999;
+  }
+  

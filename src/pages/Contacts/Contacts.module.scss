@@ -1,0 +1,134 @@
+.contactsSection {
+    max-width: 1400px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+    }
+
+    .contactsContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .contactInfo {
+            padding: 30px 20px;
+            margin-top: 30px;
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid #007bff;
+            border-radius: 10px;
+            flex-direction: column;
+            height: 100%;
+            gap: 20px;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 40%;
+            color: rgba(21, 26, 79, 0.6) !important;
+            word-wrap: break-word;
+            box-sizing: border-box;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px 20px;
+                margin-top: 20px;
+                // text-align: center;
+                max-width: 500px;
+            }
+
+            h2 {
+                font-size: 24px !important;
+            }
+
+            .greeting {
+                display: block;
+                margin-top: 50px;
+            }
+
+            a {
+                color: rgba(21, 26, 79, 0.6) !important;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 20px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -5px;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    color: rgba(21, 26, 79, 0.6);
+                }
+            }
+
+            .contactAddress::before {
+                background-image: url('/address-icon.svg');
+            }
+
+            .contactNumber::before {
+                background-image: url('/phone-icon.svg');
+            }
+
+            .contactMail::before {
+                background-image: url('/mail-icon.svg');
+            }
+
+            .socialIcons {
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    transition: ease-in-out 0.3s;
+
+                    &:hover {
+                        background-color: rgb(196, 216, 255);
+                        scale: 1.1;
+                    }
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .contactsImg {
+            max-width: 600px;
+            width: 100%;
+            align-self: center;
+            height: auto;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+}

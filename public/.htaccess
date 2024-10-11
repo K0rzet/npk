@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Убедитесь, что запросы на существующие файлы обрабатываются напрямую
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # Все остальные запросы перенаправляются на index.html
+  RewriteRule ^ index.html [L]
+</IfModule>

@@ -1,0 +1,23 @@
+.catalogPage {
+  position: relative;
+  margin: 0 auto;
+}
+
+.catalogButton {
+  max-width: 100px;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  color: #171717;
+  &:hover {
+    background-color: #ddd;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

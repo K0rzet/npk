@@ -1,0 +1,134 @@
+.sliderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  
+  .sliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (max-width: 1280px) {
+      max-width: 620px;
+    }
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    /* margin: 0 -10px; Убираем отрицательные отступы для контейнера слайдов */
+  }
+  
+  .slide {
+    width: calc(100% / 3 - 40px); /* Ширина для ПК с учетом отступов */
+    margin: 0 20px; /* Отступ между слайдами */
+    height: 400px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-size: 24px;
+
+    @media (max-width: 768px) {
+      width: calc(
+        100% - 40px
+      ); /* Ширина для мобильных устройств с учетом отступов */
+    }
+
+    .productLink {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+
+      .productImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        .overlayContent {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          text-align: center;
+          width: 100%;
+
+          h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .arrow {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #333;
+  }
+}

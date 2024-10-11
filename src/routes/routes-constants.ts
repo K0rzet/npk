@@ -1,0 +1,13 @@
+export const HOME_URL = '/';
+export const CONTACTS_URL = '/contacts';
+export const NEWS_LIST_URL = '/news';
+export const NEWS_URL = '/news/:id';
+export const PRODUCTS_CATEGORIES_URL = '/products-categories/';
+export const PRODUCT_URL = '/products/:id';
+export const PRODUCTS_URL = '/products-categories/:id';
+export const PROJECTS_URL = '/projects';
+export const PROJECT_URL = '/projects/:id';
+export const ABOUT_URL = '/about-us';
+export const COMPLEX_EQUIPMENT_CATEGORIES_URL = 'complex-equipment-categories'
+export const COMPLEX_EQUIPMENTS_URL = 'complex-equipment-categories/:id'
+export const COMPLEX_EQUIPMENT_URL = 'complex-equipments/:id'

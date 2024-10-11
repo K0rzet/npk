@@ -1,0 +1,55 @@
+// src/components/CategoryCard.module.scss
+.categoryCard {
+  overflow: hidden;
+  max-width: 300px;
+  height: 350px;
+  width: 100%;
+
+  margin-bottom: 20px;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+
+  &:hover {
+      transform: scale(1.05);
+    }
+}
+
+.categoryLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  justify-content: space-around;
+}
+
+.categoryImageContainer {
+  min-height: 250px;
+}
+.categoryImage {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+.categoryTitle {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.categoryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+.scroller {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+    gap: 20px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  
+    &::-webkit-scrollbar {
+        height: 8px; /* Высота для горизонтального скроллбара */
+      }
+    
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Цвет трека */
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background: #ccc; /* Цвет бегунка */
+        border-radius: 4px;
+      }
+    
+      &::-webkit-scrollbar-thumb:hover {
+        background: #bbb; /* Цвет бегунка при наведении */
+      }
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    padding: 10px;
+    box-sizing: border-box;
+  
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+  }
+  

@@ -1,0 +1,81 @@
+// src/components/CategoryCard.module.scss
+.productCard {
+  overflow: hidden;
+  max-width: 300px;
+  height: 400px;
+  width: 100%;
+  min-width: 250px;
+
+  margin-bottom: 20px;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.productLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  justify-content: space-around;
+}
+
+.productImageContainer {
+  height: 250px;
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+}
+.productImage {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.productTitle {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.productPrice {
+  display: block;
+  color: #007bff;
+}
+
+.productContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.callToAction {
+  display: block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

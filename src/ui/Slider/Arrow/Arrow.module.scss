@@ -1,0 +1,17 @@
+.arrow {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+}
+
+/* .left {
+  left: 50px;
+}
+
+.right {
+  right: 10px;
+} */

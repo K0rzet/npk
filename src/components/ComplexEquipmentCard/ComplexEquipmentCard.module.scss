@@ -1,0 +1,59 @@
+// src/components/CategoryCard.module.scss
+.complexEquipmentCard {
+  overflow: hidden;
+  max-width: 300px;
+  height: 350px;
+  width: 100%;
+
+  margin-bottom: 20px;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+
+  &:hover {
+      transform: scale(1.05);
+    }
+}
+
+.complexEquipmentLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  justify-content: space-around;
+}
+
+.complexEquipmentImageContainer {
+  height: 250px;
+}
+.complexEquipmentImage {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+.complexEquipmentTitle {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.complexEquipmentPrice {
+  display: block;
+  color: #007bff;
+}
+
+.complexEquipmentContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%;
+  margin-top: 20px;
+}

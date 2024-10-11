@@ -1,0 +1,19 @@
+.partnerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+  }
+  
+  .partnerLogo {
+    width: 150px;
+    // height: 100px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .partnerCard:hover .partnerLogo {
+    opacity: 0.7;
+  }
+  

@@ -1,0 +1,19 @@
+.navigationItem {
+    a {
+      color: #171717;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: color 0.3s;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+.mobileLink {
+  display: none;
+  @media (max-width: 768px) {
+      display: block;
+  }
+}

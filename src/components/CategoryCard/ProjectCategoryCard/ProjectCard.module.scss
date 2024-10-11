@@ -1,0 +1,61 @@
+// src/components/CategoryCard.module.scss
+.projectCard {
+  overflow: hidden;
+  max-width: 300px;
+  height: 240px;
+  width: 100%;
+  min-width: 250px;
+
+  margin-bottom: 20px;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  text
+
+  &:hover {
+      transform: scale(1.05);
+    }
+}
+
+.projectLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  justify-content: space-around;
+}
+
+.projectImageContainer {
+  height: 250px;
+}
+.projectImage {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+.projectTitle {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.projectPrice {
+  display: block;
+  color: #007bff;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%
+}
