@@ -8,7 +8,7 @@ import {
   IProject,
 } from "../types/types";
 
-const baseURL = "https://ehot2004.pythonanywhere.com/api/";
+const baseURL = "https://api.npkolimp.com/api/";
 
 const api = axios.create({
   baseURL,
