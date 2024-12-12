@@ -42,7 +42,7 @@ const AboutUs = () => {
           </p>
         </div>
       <div className={styles.image}>
-        <img src="/aboutus-image.jpeg" alt="About Us" />
+        <img src="/aboutus-image.jpg" alt="About Us" />
       </div>
       </div>
     </section>
